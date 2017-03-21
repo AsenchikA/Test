@@ -1,24 +1,69 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-  @@include('_include/page-head.html')
-  <title>Document</title>
+  <meta charset="UTF-8">
+  <title>Пятерочка</title>
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-  @@include('img/sprite-svg.svg')
+@@include('img/sprite-svg.svg')
 
-  <svg width="24" height="24"><use xlink:href="#loupe"></use></svg>
-  <svg width="24" height="24"><use xlink:href="#rgb"></use></svg>
-  <svg width="24" height="24"><use xlink:href="#tea-cup"></use></svg>
+  <header>
+    <div class="main-header">
+      <div class="main-header__container">
+        <div class="main-header__row">
+            <form class="city-selection" action=""><select name="" id="">
+              <option>Омск</option>
+              <option>Москва</option>
+              <option>Санкт-Петербург</option>
+            </select></form>
+            <nav class="main-nav">
+              <a href="#" class="main-nav__item">О компании</a>
+              <a href="#" class="main-nav__item">Акции</a>
+              <a href="#" class="main-nav__item">Магазины</a>
+              <a href="#" class="main-nav__item">Новости</a>
+              <a href="#" class="main-nav__item">Товары</a>
+              <a href="#" class="main-nav__item">Напишите нам</a>
+            </nav>
+            <span class="main-header__phone">8-800-555-55-05</span>
+          </div>
+      </div>
+    </div>
+    <div class="page-header">
+      <div class="page-header__container">
+        <div class="page-header__row">
+          <div class="logo"><svg><use xlink:href="#logo"></use></svg></div>
+          <nav class="page-nav">
+            <a href="#" class="page-nav__item">Покупателям</a>
+            <a href="#" class="page-nav__item">Партнерам</a>
+            <a href="#" class="page-nav__item">Карьера</a>
+          </nav>
+          <a class="page-header__search"><svg><use xlink:href="#search"></use></svg></a>
+          <div class="page-header__col"><a href="#" class="btn-enter">Войти</a></div>
+          <a href="#" class="toggler" id="toggler"><span></span></a>
+        </div>
+        </div>
+    </div>
+  </header>
+  <main>
+    <div class="promo-slider">
+        <section class="promo-slider__item promo-slider__item--chiken promo-slider__item--active" id="promo-chiken">
+          <div class="promo-slider__container">
+            <span class="promo-slider__data">С 30 июня по 6 июля 2015 года</span>
+            <span class="promo-slider__title">Окорочка куриные охлаждённые </span>
+            <span class="promo-slider__weight">1 кг</span>
+          </div>
+        </section>
+        <section class="promo-slider__item promo-slider__item--japan" id="promo-japan">
+          <div class="promo-slider__container">
+            <span class="promo-slider__data">С 30 июня по 6 июля 2015 года</span>
+            <span class="promo-slider__title">Неделя японской кухни</span>
+            <span class="promo-slider__decription">На этой неделе скидка на все ингридиенты для рецептов японской кухни</span>
+          </div>
+        </section>
+      </div>
+  </main>
 
-
-  <div class="chrome"></div>
-  <div class="github-logo"></div>
-  <div class="kraken"></div>
-  <div class="male-and-female"></div>
-  <div class="musica-searcher"></div>
-  <div class="placeholder"></div>
-
-  <p>text</p>
+  <script src="js/script.min.js"></script>
 </body>
 </html>
