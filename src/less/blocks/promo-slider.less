@@ -1,92 +1,96 @@
 .promo-slider{
 
-  @media (min-width: @screen-sm){
-    margin-bottom: 24px;
-  }
+  position: relative;
 
-  @media (min-width: @screen-sm){
-    margin-bottom: 18px;
-  }
-
-  &__inner{
+  &__container {
     .container;
   }
 
   &__item{
-    display: none;
     width: 100%;
     min-height: 500px;
-    padding-top: 20px;
 
     @media (min-width: @screen-sm) {
-      padding: 20px;
+      padding-top: 48px;
     }
 
-    @media (min-width: @screen-lg) {
-      min-height: 430px;
-      padding-top: 90px;
+    @media (min-width: @screen-md) {
+      padding-top: 63px;
     }
 
-    &--active{
-      display: block;
-    }
-
-    &--family {
-      background: url('../img/promo-gallery--family-xs.jpg') no-repeat;
-      background-size: cover;
+    &--chiken {
+      background-color: #ecdfd3;
+      background-image: url('../img/promo--1.png');
+      background-repeat: no-repeat;
 
       @media (min-width: @screen-sm) {
-        background: url('../img/promo-gallery--family-sm.jpg') no-repeat;
-        background-size: cover;
+        background-position: 50%;
+      }
+
+      @media (min-width: @screen-md) {
+        background-position: right 40px top 50px;
+      }
+
+      @media (min-width: @screen-lg) {
+        background-position: right 160px top 50px;
       }
     }
 
-    &--company {
-      background: url('../img/promo-gallery--company.jpg') no-repeat;
+    &--japan {
+      background: url('../img/promo--2.jpg') no-repeat;
       background-size: cover;
+      background-position: right 0;
     }
   }
 
-  &__slogan{
+  &__data {
     display: block;
-    width: 100%;
-    font-weight: build;
-    margin-bottom: 0px;
-    padding: 10px 7px;
-    text-align: center;
-    background-color: rgba(255,255,255,0.9);
-    opacity: 0.9;
 
     @media (min-width: @screen-sm){
-      text-align: left;
-      margin-bottom: 24px;
+      font-size: 22px;
+      margin-bottom: 25px;
     }
 
-    @media (min-width: @screen-lg){
-      width: 50%;
+    @media (min-width: @screen-md){
+      font-size: 20px;
+      margin-bottom: 80px;
     }
   }
 
 
-  &__title{
+  &__title {
     display: block;
-    width: 100%;
-
-    font-weight: lighter;
-
-    padding: 12px 4px;
-    margin-top: 0;
-    text-align: center;
-    background-color: rgba(255,255,255,0.9);
-    opacity: 0.9;
+    font-size: 44px;
+    font-weight: bold;
+    text-align: left;
 
     @media (min-width: @screen-sm){
-      text-align: left;
+      margin-bottom: 35px;
+      max-width: 440px;
+    }
 
+    @media (min-width: @screen-md){
+      margin-bottom: 95px;
+      max-width: 365px;
     }
 
     @media (min-width: @screen-lg){
-       width: 50%;
+      max-width: 380px;
+    }
+  }
+
+  &__description {
+    display: block;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 400;
+
+    @media (min-width: @screen-sm){
+      max-width: 440px;
+    }
+
+    @media (min-width: @screen-md){
+      max-width: 500px;
     }
   }
 
