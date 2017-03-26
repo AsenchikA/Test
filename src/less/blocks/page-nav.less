@@ -11,20 +11,17 @@
 
   &__item {
     float: left;
+    width: 33.33%;
+    font-size: 28px;
     text-decoration: none;
     color: @white;
 
-    @media (min-width: @screen-sm) {
-      width: 33.33%;
-      font-size: 28px;
+    &:nth-child(2n) {
+      text-align: center;
+    }
 
-      &:nth-child(2n) {
-        text-align: center;
-      }
-
-      &:nth-child(3n) {
-        text-align: right;
-      }
+    &:nth-child(3n) {
+      text-align: right;
     }
 
     @media (min-width: @screen-md) {
@@ -34,7 +31,5 @@
       text-align: left;
       line-height: 36px;
     }
-
-
   }
 }

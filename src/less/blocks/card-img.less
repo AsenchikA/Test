@@ -1,0 +1,24 @@
+.card-img {
+  width: 576px;
+  height: 320px;
+  padding: 25px;
+  margin: 0 auto;
+  margin-bottom: 32px;
+  background-color: @white;
+  border-radius: 30px;
+
+  @media (min-width: @screen-md) {
+    position: absolute;
+    right: 20px;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    width: 337px;
+    height: 199px;
+    border-radius: 22px;
+  }
+
+  & img {
+    width: 225px;
+  }
+}

@@ -1,10 +1,7 @@
 .page-header {
   background-color: @brand-color;
-
-  @media (min-width: @screen-sm) {
-    padding-top: 30px;
-    padding-bottom: 40px;
-  }
+  padding-top: 30px;
+  padding-bottom: 40px;
 
   @media (min-width: @screen-md) {
     padding-top: 20px;
@@ -17,7 +14,7 @@
   }
 
   &__row {
-    @media (min-width: @screen-lg) {
+    @media (min-width: @screen-md) {
       .row;
     }
   }
@@ -32,13 +29,10 @@
 
   &__search {
     position: absolute;
+    width: 40px;
+    height: 38px;
+    top: 18px;
     right: 150px;
-
-    @media (min-width: @screen-sm) {
-      width: 40px;
-      height: 38px;
-      top: 18px;
-    }
 
     @media (min-width: @screen-md) {
       width: 21px;
