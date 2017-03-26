@@ -13,4 +13,9 @@ $(document).ready(function(){
     dots:true,
     dotsEach: true
   });
+
+  $('.footer-menu__item').click(function(){
+    $(this).toggleClass("footer-menu__item--open");
+    $(this).children().toggleClass("footer-submenu--visible");
+  });
 });
