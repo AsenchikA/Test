@@ -1,0 +1,32 @@
+/*
+Файл для отдельной подгрузки WOFF-версии файла JS-ом.
+Будет обработан при сборке: в url() будет подставлена base64 кодированная версия указанного файла
+*/
+
+@font-face {
+  font-family: 'AvenirNext';
+  src: url('AvenirNext-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Open Sans_my';
+  src: url('AvenirNext-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Open Sans_my';
+  src: url('AvenirNext-DemiBold.woff2') format('woff');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Open Sans_my';
+  src: url('AvenirNext-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
