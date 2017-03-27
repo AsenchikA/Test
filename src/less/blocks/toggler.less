@@ -20,7 +20,6 @@
     background: @white;
     position: relative;
     border-radius: 1px;
-    transition: background .3s .5s;
 
     &:before,
     &:after {
@@ -32,7 +31,6 @@
       content: '';
       border-radius: 1px;
       transform-origin: 50% 50%;
-      transition: top .3s .6s, transform .3s;
     }
 
     &:before {
@@ -46,12 +44,10 @@
 
   &--close {
     > span {
-      transition: background .3s 0;
       background: transparent;
 
       &:before,
       &:after {
-        transition: top .3s, transform .3s .5s;
         top: 0;
       }
 

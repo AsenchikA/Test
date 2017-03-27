@@ -13,11 +13,15 @@
     <div class="main-header">
       <div class="main-header__container">
         <div class="main-header__row">
-            <form class="city-selection" action=""><select name="" id="">
-              <option>Омск</option>
-              <option>Москва</option>
-              <option>Санкт-Петербург</option>
-            </select></form>
+            <form class="city-selection" action="">
+              <div class="city-selection__wrapper">
+                <select name="" id="">
+                  <option>Омск</option>
+                  <option>Москва</option>
+                  <option>Санкт-Петербург</option>
+                </select>
+              </div>
+            </form>
             <nav class="main-nav">
               <a href="#" class="main-nav__item">О компании</a>
               <a href="#" class="main-nav__item">Акции</a>
@@ -71,9 +75,9 @@
 
       <div class="soc-links">
         <div class="soc-links__container">
-          <a class="soc-links__item" href="#"><svg width="22" height="13"><use xlink:href="#vk"></use></svg></a>
-          <a class="soc-links__item" href="#"><svg width="36" height="23"><use xlink:href="#ok"></use></svg></a>
-          <a class="soc-links__item" href="#"><svg width="20" height="19"><use xlink:href="#mail"></use></svg></a>
+          <a class="soc-links__item soc-links__item--vk" href="#"><svg><use xlink:href="#vk"></use></svg></a>
+          <a class="soc-links__item soc-links__item--ok" href="#"><svg><use xlink:href="#ok"></use></svg></a>
+          <a class="soc-links__item soc-links__item--mail" href="#"><svg><use xlink:href="#mail"></use></svg></a>
         </div>
       </div>
 
@@ -147,7 +151,7 @@
           <div class="card-img">
             <img src="img/logo-red.png" alt="Пятерочка">
           </div>
-          <a class="btn-register">Зарегистрировать карту</a>
+          <a class="btn-register" href="#">Зарегистрировать карту</a>
         </div>
       </div>
   </main>
