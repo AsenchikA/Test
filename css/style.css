@@ -319,11 +319,7 @@ body {
   float: left;
   margin-right: 25px;
 }
-.city-selection__wrapper {
-  width: 130px;
-}
 .city-selection select {
-  width: 150px;
   border: 0;
   background-color: #cb1717;
   color: #fe9389;
