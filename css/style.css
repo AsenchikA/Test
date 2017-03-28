@@ -14,6 +14,9 @@ body {
   display: block;
   clear: both;
 }
+sup {
+  font-size: 0.5em;
+}
 .container {
   padding: 0 32px;
 }
@@ -320,13 +323,36 @@ body {
 }
 .city-selection {
   float: left;
+  position: relative;
   margin-right: 25px;
   font-weight: 500;
 }
+.city-selection__wrapper {
+  position: relative;
+  width: 80px;
+  overflow: hidden;
+}
+.city-selection__wrapper:after {
+  content: '';
+  position: absolute;
+  right: 0px;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  width: 7px;
+  height: 7px;
+  border-bottom: 1px solid #fd9187;
+  border-right: 1px solid #fd9187;
+  transform: rotate(45deg);
+}
 .city-selection select {
+  width: 100px;
   border: 0;
+  padding-left: 20px;
   background-color: #cb1717;
   color: #fe9389;
+  background-image: url(../img/city-selection.png);
+  background-repeat: no-repeat;
 }
 .city-selection select option:focus {
   background-color: #cb1717;
@@ -438,6 +464,7 @@ body {
   position: relative;
 }
 .promo-slider__container {
+  position: relative;
   padding: 0 32px;
 }
 .promo-slider__container:after {
@@ -474,6 +501,48 @@ body {
   font-size: 44px;
   font-weight: bold;
   text-align: left;
+}
+.promo-slider__price {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  bottom: -30px;
+  right: 32px;
+  padding-top: 50px;
+  padding-left: 28px;
+  padding-right: 35px;
+  background-color: #52d05d;
+  border-radius: 50%;
+}
+.promo-slider__price--new {
+  margin: 0;
+  font-size: 48px;
+  font-weight: bold;
+  color: #fff;
+}
+.promo-slider__price--old {
+  position: relative;
+  margin: 0;
+  font-size: 24px;
+  font-weight: bold;
+  color: #0e7b2f;
+}
+.promo-slider__price--old:after {
+  content: '';
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  width: 70px;
+  height: 2px;
+  background-color: #fff;
+  transform: rotate(-20deg);
+}
+.promo-slider__price--sale {
+  margin: 0;
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+  text-align: right;
 }
 .promo-slider__description {
   display: block;
@@ -996,6 +1065,9 @@ body {
     max-width: 365px;
     margin-bottom: 95px;
   }
+  .promo-slider__price {
+    right: 30px;
+  }
   .promo-slider__description {
     max-width: 500px;
   }
@@ -1308,6 +1380,9 @@ body {
   }
   .promo-slider__title {
     max-width: 380px;
+  }
+  .promo-slider__price {
+    right: 60px;
   }
   .recipes {
     padding-bottom: 60px;
